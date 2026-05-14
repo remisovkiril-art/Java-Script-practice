@@ -21,6 +21,35 @@ const cl = console.log;
 //cl(student.average);
 //const button = new Button("Click me", "green");
 //button.show(cl);
-const button = new WindowsButton("Add", "red", 100, 50);
-cl(button);
-button.show(cl);
+//const button = new WindowsButton("Add", "red", 100, 50);
+//cl(typeof button);
+//class Point {
+//    constructor(x, y) {
+//        this.x = x;
+//        this.y = y;
+//    }
+//    toString() {
+//        return `${this.x}, ${this.y}`;
+//    }
+//    valueOf() {
+//        return 100;
+//    }
+//}
+//const obj = { a: 1, b: 2 };
+//cl(JSON.stringify(obj));
+//const json = '{"name": "John", "age": 30}';
+//const user = JSON.parse(json);
+//cl(Object.keys(user));
+//cl(Object.values(user));
+//cl(Object.entries(user));
+//for (let key in user) {
+//    cl(`${key}-> value: ${user[key]}`);
+//}
+//const obj = {
+//    name: "Test",
+//    f: function () {
+//        cl(this)
+//    },
+//};
+//obj.f();
+
