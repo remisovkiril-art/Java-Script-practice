@@ -16,6 +16,6 @@ let circleArea = Math.PI * radius ** 2;
 alert(`Площадь круга: ${circleArea}`);
 // 5
 let distance = Number(prompt("Введите расстояние между городами в км:"));
-let hours = Number(prompt("За сколько часов хотите добраться?"));
+let hours = Number(prompt("За сколько часов хотите добраться"));
 let speed = distance / hours;
 alert(`Необходимая скорость: ${speed} км/ч`);
