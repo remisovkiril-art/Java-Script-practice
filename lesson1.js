@@ -36,7 +36,3 @@
 //    }
 //}
 //console.log(a);
-import User from "./User.js";
-const user = new User("bob");
-const p = document.getElementById("name");
-p.innerText = user.show();
