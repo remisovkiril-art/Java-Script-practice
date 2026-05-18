@@ -11,7 +11,7 @@ div.append(p2);
 div.append(p3);
 document.body.append(div);
 const button = document.createElement("button");
-button.innerText = "Block";
+button.innerText = "Show";
 document.body.append(button);
 button.onclick = function () {
     const language = prompt(
