@@ -11,7 +11,7 @@ class News {
         const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
         let dateText = "";
         if (diffDays < 1) {
-            dateText = "сьогодні";
+            dateText = "сегодня";
         } else if (diffDays < 7) {
             dateText = `${diffDays} days ago`;
         } else {
