@@ -71,10 +71,39 @@
 //     if (e.code === "KeyW") {
 //     }
 // });
+const price = [4, 6, 7, ];
+const N = 3;
+for (let i = 0; i < N; i++) {
+    let btn = document.createElement("button");
+    btn.textContent = `button-${i}`;
+    btn.setAttribute("data-price", price[i]);
+    btn.setAttribute("data-id", i);
+    document.body.append(btn);
+}
+const buttons = document.querySelectorAll("button");
+buttons.forEach((b) => {
+    b.addEventListener("click", (ev) => {
+        console.log(ev.target.dataset.price);
+        console.log(ev.target.dataset.id);
+    });
+})
+
+
+
+
 const p = document.getElementById("text")
-document.getElementById("input").addEventListener("keydown", (e) => {
-    const pattern = /([a-zA-z]|[0-9])/;
-    if (pattern.test(e.key)) {
-        p.innerText += e.key;
-    }
+const textField = document.getElementById("input");
+textField.addEventListener("input", (e) => {
+    // console.dir(e);
+    console.log(e.target.value);
+    p.innerText = e.target.value;
 });
+document.getElementById("btn").addEventListener("click", (e) => {
+    console.log(e.target);
+});
+// document.getElementById("input").addEventListener("keydown", (e) => {
+//     const pattern = /^([a-zA-Z]|[0-9]){1}$/;
+//     if (pattern.test(e.key)) {
+//         p.innerText += e.key;
+//     }
+// });
