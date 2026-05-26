@@ -1,4 +1,4 @@
-import User from "./User.js";
+import User from "./User";
 function sum(a: number, b: number): number {
     return a + b;
 }
