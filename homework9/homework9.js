@@ -57,8 +57,14 @@ function checkForm(e) {
         form.phone.classList.add("error");
         ok = false;
     }
-    let skills = document.querySelectorAll("input[name='skills']:checked");
-    if (skills.length < 2) {
+    let skills = document.querySelectorAll("[name='skills']");
+    let count = 0;
+    for (let i = 0; i < skills.length; i++) {
+        if (skills[i].checked) {
+            count++;
+        }
+    }
+    if (count < 2) {
         ok = false;
     }
     if (comment.length < 10 || comment.length > 150
