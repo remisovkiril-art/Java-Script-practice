@@ -5,3 +5,6 @@ dist/
 *.suo
 bin/
 obj/
+src/**/*.js
+src/**/*.js.map
+src/**/*.d.ts
