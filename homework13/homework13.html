@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Search</title>
+    <script defer src="homework13.js"></script>
+</head>
+<body>
+
+    <h1>Пошук фільмів</h1>
+
+    <form id="searchForm">
+
+        <label>Title:</label>
+        <input type="text"
+               id="title"
+               required>
+
+        <br><br>
+
+        <label>Type:</label>
+
+        <select id="type">
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+            Search
+        </button>
+
+    </form>
+
+    <hr>
+
+    <div id="movies"></div>
+
+    <br>
+
+    <div id="pagination"></div>
+
+    <br>
+
+    <div id="details"></div>
+
+</body>
+</html>
